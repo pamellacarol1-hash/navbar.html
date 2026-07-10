@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #8B52BF;
+			text-decoration: bold;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #F1E7FF;
+		}
+
+		.border {
+			border: 3px solid #C596FE;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #C281FE;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border background"> 
+		<a id="Início" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Início</a>
+                <a id="Residência" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-stethoscope"></i></i> Residência</a>
+		<a id="Bem-Estar" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-apple-whole"></i> Bem-Estar</a>
+                <a id="Produtividade" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-chart-line"></i> Produtividade</a>
+		<a id="Estilo de Vida" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-cart-shopping"></i> Estilo de Vida</a>
+		<a id="Financeiro" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-credit-card"></i> Financeiro</a>
+		<a id="Eventos" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-calendar-days"></i> Eventos</a>
+		<a id="Tarefas" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-check"></i> Tarefas</a>
+		<a id="Notas" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-highlighter"></i> Notas</a>
+		<a id="Comissão" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-graduation-cap"></i> Comissão</a>
+		<a id="Formatura" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-martini-glass"></i> Formatura</a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'Início')
+				window.open("https://app.notion.com/p/med26/Life-Planner-4176f65f7fbd820cb6a681f73586504a?source=copy_link", '_blank').focus();
+			else if (id == "Bem-Estar")
+				window.open("https://app.notion.com/p/med26/Planejamento-di-rio-28d6f65f7fbd83f5b54b0142d814e8c8?source=copy_link", '_blank').focus();
+			else if (id == "Financeiro")
+				window.open("https://app.notion.com/p/med26/Hub-Financeiro-eeb6f65f7fbd8374a2698175880fea2a?source=copy_link", '_blank').focus();
+			else if (id == "Eventos")
+				window.open("https://app.notion.com/p/med26/Eventos-2396f65f7fbd83ff8cf581675c8eb597?source=copy_link", '_blank').focus();
+			else if (id == "Tarefas")
+				window.open("https://app.notion.com/p/med26/Tarefas-9066f65f7fbd82ea9c0001b6adde916b?source=copy_link", '_blank').focus();
+			else if (id == "Residência")
+				window.open("https://app.notion.com/p/med26/Resid-ncia-2976f65f7fbd828b8c2f810f9520b7cc?source=copy_link", '_blank').focus();
+			else if (id == "Notas")
+				window.open("https://app.notion.com/p/med26/Hub-de-notas-1de6f65f7fbd83e9b1be018f6ad62920?source=copy_link", '_blank').focus();
+			else if (id == "Produtividade")
+				window.open("https://app.notion.com/p/med26/Hub-de-Produtividade-8e76f65f7fbd83e1bb5381ebde0549d3?source=copy_link", '_blank').focus();
+			else if (id == "Estilo de Vida")
+				window.open("https://app.notion.com/p/med26/Hub-de-Estilo-de-Vida-4826f65f7fbd8330a32881c6604eec01?source=copy_link", '_blank').focus();
+			else if (id == "Comissão")
+				window.open("https://app.notion.com/p/med26/Comiss-o-4546f65f7fbd826ebcf981050033bd75?source=copy_link", '_blank').focus();
+			else if (id == "Formatura")
+				window.open("https://app.notion.com/p/med26/Formatura-1456f65f7fbd82288f9881d6d0afa862?source=copy_link", '_blank').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
