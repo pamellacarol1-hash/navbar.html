@@ -10,7 +10,7 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet">
 
 	<!-------->
 
@@ -24,7 +24,7 @@
 
 
 		.navMenu {
-			font-family: 'Advent Pro', sans-serif;
+			font-family: 'Chonburi', serif;
 			padding: 6px;
 			text-align: center;
 			margin: 1px auto;
@@ -32,44 +32,48 @@
 		}
 
 		.navMenu a {
-			color: #ff87d5;
-			text-decoration: bold;
+			color: #fff;
+			text-decoration: none;
 			text-transform: uppercase;
-			display:inline-block;
-			padding: 7px;
+			display: inline-block;
+			padding: 8px 11px;
+			border: 1px solid rgba(255, 255, 255, .82);
+			border-radius: 12px;
+			background: linear-gradient(135deg, #ff8bc8 0%, #ff65bf 38%, #b97cff 100%);
+			font-size: 13px;
+			font-weight: 800;
+			white-space: nowrap;
+			transition: all .18s ease;
+			box-shadow: 0 0 0 1px rgba(255, 117, 202, .24), 0 0 12px rgba(255, 124, 206, .42), 0 0 20px rgba(170, 114, 255, .24), 0 8px 16px rgba(233, 95, 177, .22);
 		}
 
 		.background {
-			background-color: #F1E7FF;
+			background-color: #FFFFFF;
 		}
 
-		.border {
-			border: 3px solid #C596FE;
-
-		}
-
-		.navMenu a:hover {
-
-			color: #C281FE;
+		.navMenu a:hover,
+		.navMenu a:focus-visible {
+			color: #fff;
+			background: linear-gradient(135deg, #ff9bd0 0%, #ff70c4 38%, #c38cff 100%);
+			box-shadow: 0 0 0 2px rgba(255, 117, 202, .4), 0 0 20px rgba(255, 124, 206, .72), 0 0 32px rgba(170, 114, 255, .42), 0 10px 20px rgba(233, 95, 177, .32);
+			transform: translateY(-1px);
+			outline: none;
 		}
 	</style>
 </head>
 
 <body>
 
-	<nav class="navMenu  border background"> 
-		<a id="Início" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Início</a>
-		<a id="Hub de Aprendizado" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-stethoscope"></i></i> Hub de Aprendizado</a>
-		<a id="Hub de Bem-Estar" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-apple-whole"></i> Hub de Bem-Estar</a>
-        <a id="Hub de Produtividade" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-chart-line"></i> Hub de Produtividade</a>
-		<a id="Hub de Estilo de Vida" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-cart-shopping"></i> Hub de Estilo de Vida</a>
-		<a id="Hub Financeiro" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-credit-card"></i> Hub Financeiro</a>
-		<a id="Residência" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-stethoscope"></i></i> Residência</a>
-		<a id="Tarefas" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-check"></i> Tarefas</a>
-		<a id="Notas" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-highlighter"></i> Notas</a>
-		<a id="Comissão" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-graduation-cap"></i> Comissão</a>
-		<a id="Formatura" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-martini-glass"></i> Formatura</a>
-
+	<nav class="navMenu background"> 
+		<a id="Convidados" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-users"></i> Convidados</a>
+		<a id="Serviços" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-star-of-life"></i> Serviços</a>
+		<a id="Gastos" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-1-wave"></i> Gastos</a>
+        <a id="Lembrancinha" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-gift"></i> Lembrancinha</a>
+		<a id="Anel" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-ring"></i> Anel</a>
+		<a id="Vestidos" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-person-dress"></i> Vestidos</a>
+<a id="Make" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-wand-magic-sparkles"></i> Make</a>
+<a id="Cronograma" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-days"></i> Cronograma</a>
+		
 
 
 	</nav>
@@ -85,24 +89,22 @@
 
 		function navigate(id) {
 
-			if (id == 'Início')
-				window.open("https://app.notion.com/p/med26/Life-Planner-4176f65f7fbd820cb6a681f73586504a?source=copy_link", '_blank').focus();
-			else if (id == "Hub de Bem-Estar")
-				window.open("https://app.notion.com/p/med26/Hub-de-Bem-estar-b4a6f65f7fbd8293a5be81488bb828b4?source=copy_link", '_blank').focus();
-			else if (id == "Hub Financeiro")
-				window.open("https://app.notion.com/p/med26/Hub-Financeiro-eeb6f65f7fbd8374a2698175880fea2a?source=copy_link", '_blank').focus();
-			else if (id == "Tarefas")
-				window.open("https://app.notion.com/p/med26/Tarefas-9066f65f7fbd82ea9c0001b6adde916b?source=copy_link", '_blank').focus();
-			else if (id == "Residência")
-				window.open("https://app.notion.com/p/med26/Resid-ncia-2976f65f7fbd828b8c2f810f9520b7cc?source=copy_link", '_blank').focus();
-			else if (id == "Notas")
-				window.open("https://app.notion.com/p/med26/Hub-de-notas-1de6f65f7fbd83e9b1be018f6ad62920?source=copy_link", '_blank').focus();
-			else if (id == "Hub de Aprendizado")
-				window.open("https://app.notion.com/p/med26/Hub-de-Aprendizado-6556f65f7fbd82f790c081a6b1b9e76b?source=copy_link", '_blank').focus();
-			else if (id == "Hub de Produtividade")
-				window.open("https://app.notion.com/p/med26/Hub-de-Produtividade-8e76f65f7fbd83e1bb5381ebde0549d3?source=copy_link", '_blank').focus();
-			else if (id == "Hub de Estilo de Vida")
-				window.open("https://app.notion.com/p/med26/Hub-de-Estilo-de-Vida-4826f65f7fbd8330a32881c6604eec01?source=copy_link", '_blank').focus();
+			if (id == 'Convidados')
+				window.open("https://app.notion.com/p/med26/Convidados-4096f65f7fbd80ad9cd9da66e9c9f5cb?source=copy_link", '_blank').focus();
+			else if (id == "Serviços")
+				window.open("https://app.notion.com/p/med26/Servi-os-4096f65f7fbd80d3bc73d3ef331b67d4?source=copy_link", '_blank').focus();
+			else if (id == "Gastos")
+				window.open("https://app.notion.com/p/med26/Gastos-4096f65f7fbd807bb6a9d36232487aba?source=copy_link", '_blank').focus();
+			else if (id == "Anel")
+				window.open("https://app.notion.com/p/med26/Anel-4096f65f7fbd8099b642f2186308ff01?source=copy_link", '_blank').focus();
+			else if (id == "Vestidos")
+				window.open("https://app.notion.com/p/med26/Vestidos-4096f65f7fbd80eb9e4fc594cef18a09?source=copy_link", '_blank').focus();
+			else if (id == "Cronograma")
+				window.open("https://app.notion.com/p/med26/Cronograma-4096f65f7fbd8011b80cd63ec1567303?source=copy_link", '_blank').focus();
+			else if (id == "Make")
+				window.open("https://app.notion.com/p/med26/Make-e-Penteado-4096f65f7fbd8005bb4be8f1b36b3ef8?source=copy_link", '_blank').focus();
+			else if (id == "Lembrancinha")
+				window.open("https://app.notion.com/p/med26/Lembrancinha-4096f65f7fbd807e9d3bd33c56fdf79b?source=copy_link", '_blank').focus();
 			else if (id == "Comissão")
 				window.open("https://app.notion.com/p/med26/Comiss-o-4546f65f7fbd826ebcf981050033bd75?source=copy_link", '_blank').focus();
 			else if (id == "Formatura")
