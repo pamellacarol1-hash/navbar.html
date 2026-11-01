@@ -32,19 +32,19 @@
 		}
 
 		.navMenu a {
-			color: #fff;
+			margin: 0;
+			color: #ff87d5;
 			text-decoration: none;
 			text-transform: uppercase;
 			display: inline-block;
-			padding: 8px 11px;
-			border: 1px solid rgba(255, 255, 255, .82);
-			border-radius: 12px;
-			background: linear-gradient(135deg, #ff8bc8 0%, #ff65bf 38%, #b97cff 100%);
-			font-size: 13px;
-			font-weight: 800;
+			padding: 3px 5px;
+			border: 1px solid #ff87d5;
+			border-radius: 0;
+			background: #fff;
+			font-size: 14px;
+			font-weight: 600;
 			white-space: nowrap;
-			transition: all .18s ease;
-			box-shadow: 0 0 0 1px rgba(255, 117, 202, .24), 0 0 12px rgba(255, 124, 206, .42), 0 0 20px rgba(170, 114, 255, .24), 0 8px 16px rgba(233, 95, 177, .22);
+			transition: background-color .18s ease, border-color .18s ease, color .18s ease;
 		}
 
 		.background {
@@ -53,26 +53,66 @@
 
 		.navMenu a:hover,
 		.navMenu a:focus-visible {
-			color: #fff;
-			background: linear-gradient(135deg, #ff9bd0 0%, #ff70c4 38%, #c38cff 100%);
-			box-shadow: 0 0 0 2px rgba(255, 117, 202, .4), 0 0 20px rgba(255, 124, 206, .72), 0 0 32px rgba(170, 114, 255, .42), 0 10px 20px rgba(233, 95, 177, .32);
-			transform: translateY(-1px);
-			outline: none;
+			color: #e760b8;
+			background: #fff0f7;
+			border-color: #e760b8;
 		}
+
+		.navMenu a:focus-visible {
+			outline: 2px solid #e760b8;
+			outline-offset: 2px;
+		}
+
+		.navMenu svg {
+			width: 24px;
+			height: 24px;
+			vertical-align: middle;
+		}
+
 	</style>
 </head>
 
 <body>
 
 	<nav class="navMenu background"> 
-		<a id="Convidados" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-users"></i> Convidados</a>
-		<a id="Serviços" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-star-of-life"></i> Serviços</a>
-		<a id="Gastos" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-1-wave"></i> Gastos</a>
-        <a id="Lembrancinha" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-gift"></i> Lembrancinha</a>
-		<a id="Anel" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-ring"></i> Anel</a>
-		<a id="Vestidos" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-person-dress"></i> Vestidos</a>
-<a id="Make" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-wand-magic-sparkles"></i> Make</a>
-<a id="Cronograma" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-days"></i> Cronograma</a>
+		<a id="Convidados" onclick="navigate(this.id)" href="#"> <svg class="guests-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="-15 -15 286 286" fill="currentColor">
+			<rect x="-15" y="-15" width="286" height="286" fill="#FF87D500" data-bg-rect="true"/>
+			<path d="M64.12,147.8a4,4,0,0,1-4,4.2H16a8,8,0,0,1-7.8-6.17,8.35,8.35,0,0,1,1.62-6.93A67.79,67.79,0,0,1,37,117.51a40,40,0,1,1,66.46-35.8,3.94,3.94,0,0,1-2.27,4.18A64.08,64.08,0,0,0,64,144C64,145.28,64,146.54,64.12,147.8Zm182-8.91A67.76,67.76,0,0,0,219,117.51a40,40,0,1,0-66.46-35.8,3.94,3.94,0,0,0,2.27,4.18A64.08,64.08,0,0,1,192,144c0,1.28,0,2.54-.12,3.8a4,4,0,0,0,4,4.2H240a8,8,0,0,0,7.8-6.17A8.33,8.33,0,0,0,246.17,138.89Zm-89,43.18a48,48,0,1,0-58.37,0A72.13,72.13,0,0,0,65.07,212,8,8,0,0,0,72,224H184a8,8,0,0,0,6.93-12A72.15,72.15,0,0,0,157.19,182.07Z" fill="#ff87d5"/>
+		</svg> Convidados</a>
+		<a id="Serviços" onclick="navigate(this.id)" href="#"> <svg class="services-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="-15 -15 286 286" fill="currentColor">
+			<rect x="-15" y="-15" width="286" height="286" fill="#FF87D500" data-bg-rect="true"/>
+			<path d="M164.47,195.63a8,8,0,0,1-6.7,12.37H10.23a8,8,0,0,1-6.7-12.37,95.83,95.83,0,0,1,47.22-37.71,60,60,0,1,1,66.5,0A95.83,95.83,0,0,1,164.47,195.63Zm87.91-.15a95.87,95.87,0,0,0-47.13-37.56A60,60,0,0,0,144.7,54.59a4,4,0,0,0-1.33,6A75.83,75.83,0,0,1,147,150.53a4,4,0,0,0,1.07,5.53,112.32,112.32,0,0,1,29.85,30.83,23.92,23.92,0,0,1,3.65,16.47,4,4,0,0,0,3.95,4.64h60.3a8,8,0,0,0,7.73-5.93A8.22,8.22,0,0,0,252.38,195.48Z" fill="#ff87d5"/>
+		</svg> Serviços</a>
+		<a id="Gastos" onclick="navigate(this.id)" href="#"> <svg class="expenses-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="-15 -15 286 286" fill="currentColor">
+			<rect x="-15" y="-15" width="286" height="286" fill="#FF87D500" data-bg-rect="true"/>
+			<path d="M240,52H16A12,12,0,0,0,4,64V192a12,12,0,0,0,12,12H240a12,12,0,0,0,12-12V64A12,12,0,0,0,240,52ZM181.21,180H74.79A60.18,60.18,0,0,0,28,133.21V122.79A60.18,60.18,0,0,0,74.79,76H181.21A60.18,60.18,0,0,0,228,122.79v10.42A60.18,60.18,0,0,0,181.21,180ZM228,97.94A36.23,36.23,0,0,1,206.06,76H228ZM49.94,76A36.23,36.23,0,0,1,28,97.94V76ZM28,158.06A36.23,36.23,0,0,1,49.94,180H28ZM206.06,180A36.23,36.23,0,0,1,228,158.06V180ZM128,88a40,40,0,1,0,40,40A40,40,0,0,0,128,88Zm0,56a16,16,0,1,1,16-16A16,16,0,0,1,128,144Z" fill="#ff87d5"/>
+		</svg> Gastos</a>
+        <a id="Lembrancinha" onclick="navigate(this.id)" href="#"> <svg class="gift-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="-15 -15 286 286" fill="currentColor">
+			<rect x="-15" y="-15" width="286" height="286" fill="#FF87D500" data-bg-rect="true"/>
+			<path d="M216,72H180.92c.39-.33.79-.65,1.17-1A29.53,29.53,0,0,0,192,49.57,32.62,32.62,0,0,0,158.44,16,29.53,29.53,0,0,0,137,25.91a54.94,54.94,0,0,0-9,14.48,54.94,54.94,0,0,0-9-14.48A29.53,29.53,0,0,0,97.56,16,32.62,32.62,0,0,0,64,49.57,29.53,29.53,0,0,0,73.91,71c.38.33.78.65,1.17,1H40A16,16,0,0,0,24,88v32a16,16,0,0,0,16,16v64a16,16,0,0,0,16,16h60a4,4,0,0,0,4-4V120H40V88h80v32h16V88h80v32H136v92a4,4,0,0,0,4,4h60a16,16,0,0,0,16-16V136a16,16,0,0,0,16-16V88A16,16,0,0,0,216,72ZM84.51,59a13.69,13.69,0,0,1-4.5-10A16.62,16.62,0,0,1,96.59,32h.49a13.69,13.69,0,0,1,10,4.5c8.39,9.48,11.35,25.2,12.39,34.92C109.71,70.39,94,67.43,84.51,59Zm87,0c-9.49,8.4-25.24,11.36-35,12.4C137.7,60.89,141,45.5,149,36.51a13.69,13.69,0,0,1,10-4.5h.49A16.62,16.62,0,0,1,176,49.08,13.69,13.69,0,0,1,171.49,59Z" fill="#ff87d5"/>
+		</svg> Lembrancinha</a>
+		<a id="Anel" onclick="navigate(this.id)" href="#"> <svg class="ring-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 26 26">
+			<rect x="-1" y="-1" width="26" height="26" fill="#FF87D500" data-bg-rect="true"/>
+			<path d="M10.5 3 8 9l4 13 4-13-2.5-6" stroke="#ff87d5" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M17 3a2 2 0 0 1 1.6.8l3 4a2 2 0 0 1 .013 2.382l-7.99 10.986a2 2 0 0 1-3.247 0l-7.99-10.986A2 2 0 0 1 2.4 7.8l2.998-3.997A2 2 0 0 1 7 3z" stroke="#ff87d5" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M2 9h20" stroke="#ff87d5" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+		</svg> Anel</a>
+		<a id="Vestidos" onclick="navigate(this.id)" href="#"> <svg class="dress-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="-15 -15 286 286" fill="currentColor">
+			<rect x="-15" y="-15" width="286" height="286" fill="#FF87D500" data-bg-rect="true"/>
+			<path d="M66.26,80.23a15.26,15.26,0,0,1-1.65-12.17,15.54,15.54,0,0,1,2-4.76L88,32.7V8a8,8,0,0,1,8.53-8A8.17,8.17,0,0,1,104,8.27V32.42L109.25,39a23.91,23.91,0,0,0,19.13,9,24.67,24.67,0,0,0,18.71-9.43L152,32.42V8a8,8,0,0,1,8.53-8A8.17,8.17,0,0,1,168,8.27V32.7l21.42,30.6a15.54,15.54,0,0,1,2,4.76,15.26,15.26,0,0,1-1.65,12.17,1.74,1.74,0,0,0-.11.18l-13.86,21.74A4,4,0,0,1,172.4,104H83.6a4,4,0,0,1-3.37-1.85L66.37,80.41A1.74,1.74,0,0,0,66.26,80.23Zm148.5,129.56a2.52,2.52,0,0,0-.15-.34L173.69,122.3a4,4,0,0,0-3.63-2.3H85.94a4,4,0,0,0-3.63,2.3L41.39,209.45a2.52,2.52,0,0,0-.15.34A16.19,16.19,0,0,0,41.6,223,16,16,0,0,0,56,232H200a16,16,0,0,0,14.39-9A16.19,16.19,0,0,0,214.76,209.79Z" fill="#ff87d5"/>
+		</svg> Vestidos</a>
+<a id="Make" onclick="navigate(this.id)" href="#"> <svg class="make-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="-15 -15 286 286" fill="currentColor">
+	<rect x="-15" y="-15" width="286" height="286" fill="#FF87D500" data-bg-rect="true"/>
+	<path d="M177.42,206.62,209,137.07A64,64,0,0,0,168,24a8.4,8.4,0,0,0-1.32.11L29.37,47A16,16,0,0,0,16,62.78v50.44A16,16,0,0,0,29.37,129L128,145.44V200a16,16,0,0,0,16,16,40,40,0,0,0,40,40h16a8,8,0,0,0,0-16H184a24,24,0,0,1-24-24h2.85A16,16,0,0,0,177.42,206.62ZM192,88a24,24,0,1,1-24-24A24,24,0,0,1,192,88Zm-25.32,63.89A8.4,8.4,0,0,0,168,152a63.9,63.9,0,0,0,17.82-2.54l-23,50.54H144V148.11Z" fill="#ff87d5"/>
+</svg> Make</a>
+<a id="Cronograma" onclick="navigate(this.id)" href="#"> <svg class="schedule-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="-15 -15 286 286" fill="currentColor">
+	<rect x="-15" y="-15" width="286" height="286" fill="#FF87D500" data-bg-rect="true"/>
+	<path d="M208,28H188V24a12,12,0,0,0-24,0v4H92V24a12,12,0,0,0-24,0v4H48A20,20,0,0,0,28,48V208a20,20,0,0,0,20,20H208a20,20,0,0,0,20-20V48A20,20,0,0,0,208,28ZM68,52a12,12,0,0,0,24,0h72a12,12,0,0,0,24,0h16V76H52V52ZM52,204V100H204V204Zm60-80v56a12,12,0,0,1-24,0V143.32a12,12,0,0,1-9.37-22l16-8A12,12,0,0,1,112,124Zm61.49,33.88L163.9,168H168a12,12,0,0,1,0,24H136a12,12,0,0,1-8.71-20.25L155.45,142a4,4,0,0,0,.55-2,4,4,0,0,0-7.47-2,12,12,0,0,1-20.78-12A28,28,0,0,1,180,140a27.77,27.77,0,0,1-5.64,16.86A10.63,10.63,0,0,1,173.49,157.88Z" fill="#ff87d5"/>
+</svg> Cronograma</a>
+<a id="Cardápio" onclick="navigate(this.id)" href="#"> <svg class="menu-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="-15 -15 286 286" fill="currentColor">
+	<rect x="-15" y="-15" width="286" height="286" fill="#FF87D500" data-bg-rect="true"/>
+	<path d="M35.58,98.06a16,16,0,0,1-3.23-13.44C39.78,49.5,80,24,128,24s88.22,25.5,95.65,60.62A16,16,0,0,1,207.93,104H48.07A16,16,0,0,1,35.58,98.06Zm193.68,54.42-41.13,15L151,152.57a8,8,0,0,0-5.94,0l-37,14.81L71,152.57a8,8,0,0,0-5.7-.09l-44,16a8,8,0,0,0,5.47,15L40,178.69V184a40,40,0,0,0,40,40h96a40,40,0,0,0,40-40v-9.67l18.73-6.81a8,8,0,1,0-5.47-15ZM24,136H232a8,8,0,0,0,0-16H24a8,8,0,0,0,0,16Z" fill="#ff87d5"/>
+</svg> Cardápio</a>
 		
 
 
@@ -101,6 +141,8 @@
 				window.open("https://app.notion.com/p/med26/Vestidos-4096f65f7fbd80eb9e4fc594cef18a09?source=copy_link", '_blank').focus();
 			else if (id == "Cronograma")
 				window.open("https://app.notion.com/p/med26/Cronograma-4096f65f7fbd8011b80cd63ec1567303?source=copy_link", '_blank').focus();
+			else if (id == "Cardápio")
+				window.open("https://app.notion.com/p/med26/Comidas-e-Bebidas-4096f65f7fbd8027854fcb542795e7cc?source=copy_link", '_blank').focus();
 			else if (id == "Make")
 				window.open("https://app.notion.com/p/med26/Make-e-Penteado-4096f65f7fbd8005bb4be8f1b36b3ef8?source=copy_link", '_blank').focus();
 			else if (id == "Lembrancinha")
