@@ -23,7 +23,7 @@
 
 		body {
 			display: flex;
-			justify-content: flex-start;
+			justify-content: space-between;
 			align-items: center;
 			min-height: 100vh;
 		}
@@ -45,12 +45,12 @@
 
 		.navMenu a {
 			margin: 0;
-			color: #ff87d5;
+			color: #f95f3f;
 			text-decoration: none;
 			text-transform: uppercase;
 			display: inline-block;
 			padding: 3px 5px;
-			border: 1px solid #ff87d5;
+			border: 1px solid #f95f3f;
 			border-radius: 0;
 			background: #fff;
 			font-size: 18px;
@@ -65,13 +65,13 @@
 
 		.navMenu a:hover,
 		.navMenu a:focus-visible {
-			color: #e760b8;
-			background: #fff0f7;
-			border-color: #e760b8;
+			color: #c64328;
+			background: #fff0f0;
+			border-color: #c64328;
 		}
 
 		.navMenu a:focus-visible {
-			outline: 2px solid #e760b8;
+			outline: 2px solid #c64328;
 			outline-offset: 2px;
 		}
 
@@ -79,6 +79,24 @@
 			width: 30px;
 			height: 30px;
 			vertical-align: middle;
+		}
+
+		.navMenu svg [fill="#ff87d5"] {
+			fill: #f95f3f;
+		}
+
+		.navMenu svg [stroke="#ff87d5"] {
+			stroke: #f95f3f;
+		}
+
+		.navMenu a:hover svg [fill="#ff87d5"],
+		.navMenu a:focus-visible svg [fill="#ff87d5"] {
+			fill: #c64328;
+		}
+
+		.navMenu a:hover svg [stroke="#ff87d5"],
+		.navMenu a:focus-visible svg [stroke="#ff87d5"] {
+			stroke: #c64328;
 		}
 
 	</style>
